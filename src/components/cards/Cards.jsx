@@ -8,7 +8,7 @@ const Cards = ({handleSelectBtn}) => {              // step-2) here we received 
 
     useEffect(()=>{
         const fetchedData = async()=>{
-            const response = await fetch('../../../public/Fake_data.json');
+            const response = await fetch('Fake_data.json');
             const cardData = await response.json();
             setCourseInfo(cardData);
         }
@@ -17,14 +17,8 @@ const Cards = ({handleSelectBtn}) => {              // step-2) here we received 
         // console.log(courseInfo, 'fetched data');
 
     return (
-        <div className="md:w-2/3 lg:w-3/4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {
-                courseInfo.map( course => {
-                    return(
-                        <Card key={course.id} course={course} handleSelectBtn={handleSelectBtn}></Card>   // step-3) here we again passed the function to Card.jsx
-                    )
-                })
-            }
+        <div className="md:w-2/3 lg:w-3/4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">     {/* step-3) here we again passed the function to Card.jsx */}  
+            {courseInfo.map ( course => <Card key={course.id} course={course} handleSelectBtn={handleSelectBtn}></Card>)}   
         </div>
     );
 };

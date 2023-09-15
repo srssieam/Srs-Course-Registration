@@ -17,7 +17,7 @@ const Cards = ({handleSelectBtn}) => {              // step-2) here we received 
         // console.log(courseInfo, 'fetched data');
 
     return (
-        <div className="md:w-3/4 grid grid-cols-3 gap-6">
+        <div className="md:w-2/3 lg:w-3/4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {
                 courseInfo.map( course => {
                     return(

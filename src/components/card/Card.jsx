@@ -8,10 +8,10 @@ const Card = ({course, handleSelectBtn}) => {  // step-4) received the function 
         <div className="p-4 bg-white shadow-md flex flex-col justify-between gap-2 rounded-xl">
              <img src={img} alt="img" className='w-full'/>
              <h3 className="font-bold text-lg">{course_name}</h3>
-             <p className="text-sm text-gray-700">{course_details}</p>
+             <p className="text-xs lg:text-sm text-gray-700">{course_details}</p>
              <div className="flex justify-between">
-                <p className='flex gap-2 items-center text-gray-700 font-medium'><span className="text-black text-2xl"><PiCurrencyDollar/></span>Price: {price}</p>
-                <p className='flex gap-1 items-center text-gray-700 font-medium'><span className="text-black text-2xl"><HiOutlineBookOpen/></span>Credit: {credit}hr</p>
+                <p className='flex gap-2 items-center text-gray-700 font-medium text-xs lg:text-base'><span className="text-black text-base lg:text-2xl"><PiCurrencyDollar/></span>Price: {price}</p>
+                <p className='flex gap-1 items-center text-gray-700 font-medium text-xs lg:text-base'><span className="text-black text-base lg:text-2xl"><HiOutlineBookOpen/></span>Credit: {credit}hr</p>
              </div>
              <div className="text-center">
                 {/* setp-5) now when we click the button, it will call the function which is declared in App.jsx component and receive these perameters value */}

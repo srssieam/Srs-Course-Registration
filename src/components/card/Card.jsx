@@ -1,6 +1,7 @@
 
 const Card = ({course}) => {
     console.log(course, 'from card component');
+    const {id, img, course_name, course_details, price, credit} = course;
     return (
         <div className="p-5 bg-white shadow-md">
              <img src='' alt="img" />

@@ -2,6 +2,7 @@
 [
     {
       "id": 1,
+      "img": "https://i.ibb.co/KDph4rv/Rectangle-2.png",
       "course_name": "Introduction to OOP Python",
       "course_details": "This course provides a comprehensive introduction to Object-Oriented Programming (OOP) using the Python programming language.",
       "price": 49.99,
@@ -9,65 +10,65 @@
     },
     {
       "id": 2,
+      "img": "https://i.ibb.co/s9z2Wvg/Rectangle-2-1.png",
       "course_name": "Database (MySQL)",
       "course_details": "MySQL is the de-facto standard database system for web sites with HUGE volumes of both data and end-users (like Facebook, Twitter, and Wikipedia).",
-      "img": "https://i.ibb.co/s9z2Wvg/Rectangle-2-1.png",
       "price": 59.99,
       "credit": 3
     },
     {
       "id": 3,
+      "img": "https://i.ibb.co/5xRJ3Tz/Rectangle-2-2.png",
       "course_name": "Introduction to C Programming",
       "course_details": "It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.",
-      "img": "https://i.ibb.co/5xRJ3Tz/Rectangle-2-2.png",
       "price": 79.99,
       "credit": 6
     },
     {
       "id": 4,
-      "course_name": "Introduction to Algorithms",
-      "course_details": "Algorithms is a foundational course in computer science and mathematics that typically covers Algorithm Basics, Algorithm Analysis, Data Structures.",
       "img": "https://i.ibb.co/4WG5280/Rectangle-2-3.png",
+      "course_name": "Introduction to Algorithms",
+      "course_details": "Algorithms is a foundational course in computer science and mathematics that typically covers Algorithm Basics, Algorithm Analysis, Data Structures.",      
       "price": 99.99,
       "credit": 2
     },
     {
       "id": 5,
+      "img": "https://i.ibb.co/7Xbx3rL/Rectangle-2-4.png",
       "course_name": "Introduction to C++ for DSA",
       "course_details": "This course provides a comprehensive introduction to the C++ programming language with a focus on its applications in Data Structures and Algorithms (DSA).",
-      "img": "https://i.ibb.co/7Xbx3rL/Rectangle-2-4.png",
       "price": 69.99,
       "credit": 9
     },
     {
       "id": 6,
+      "img": "https://i.ibb.co/9ch6gk0/Rectangle-2-5.png",
       "course_name": "Software Engineering",
       "course_details": "This course covers a wide range of topics including software requirements analysis, design patterns, coding best practices, software testing, and project management.",
-      "img": "https://i.ibb.co/9ch6gk0/Rectangle-2-5.png",
       "price": 79.99,
       "credit": 2
     },
     {
       "id": 7,
+      "img": "https://i.ibb.co/9NgYh0P/Rectangle-2-6.png",
       "course_name": "Problem-Solving Part",
       "course_details": "Enhance your problem-solving skills and tackle complex challenges with confidence. This course covers various problem-solving techniques.",
-      "img": "https://i.ibb.co/9NgYh0P/Rectangle-2-6.png",
       "price": 89.99,
       "credit": 6
     },
     {
       "id": 8,
+      "img": "https://i.ibb.co/cFWCBMQ/Rectangle-3.png",
       "course_name": "Basic Data Structures",
       "course_details": "You will learn how to create, manipulate, and analyze these data structures, laying a strong foundation for computer science and programming.",
-      "img": "https://i.ibb.co/cFWCBMQ/Rectangle-3.png",
       "price": 109.99,
       "credit": 7
     },
     {
       "id": 9,
+      "img": "https://i.ibb.co/y4xPYvf/Rectangle-3-1.png",
       "course_name": "AWS, Cloud Computing",
       "course_details": "This comprehensive course provides an in-depth understanding of Amazon Web Services (AWS) and cloud computing technologies.",
-      "img": "https://i.ibb.co/y4xPYvf/Rectangle-3-1.png",
       "price": 89.99,
       "credit": 8
     }

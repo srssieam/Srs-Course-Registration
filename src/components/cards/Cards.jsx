@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Card from "../card/Card";
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 const Cards = ({handleSelectBtn}) => {              // step-2) here we received the function from App.jsx 
     const [courseInfo, setCourseInfo]= useState([]);
@@ -28,4 +29,7 @@ const Cards = ({handleSelectBtn}) => {              // step-2) here we received 
     );
 };
 
+Cards.propTypes = {
+    handleSelectBtn: PropTypes.func
+}
 export default Cards;

@@ -1,5 +1,5 @@
 
-
+import PropTypes from 'prop-types';
 const Cart = ({selectedCourse, creditHour, remainingHours, coursePrice}) => {   // step-8) here it has received the selected course from App.jsx
     // console.log(selectedCourse, 'hiii')
     return (
@@ -23,5 +23,10 @@ const Cart = ({selectedCourse, creditHour, remainingHours, coursePrice}) => {   
         </div>
     );
 };
-
+Cart.propTypes = {
+    selectedCourse: PropTypes.array,
+    creditHour: PropTypes.number,
+    remainingHours: PropTypes.number,
+    coursePrice: PropTypes.number
+}
 export default Cart;

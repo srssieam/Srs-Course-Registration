@@ -1,10 +1,10 @@
 
 
-const Cart = ({selectedCourse, creditHour, coursePrice}) => {   // step-8) here it has received the selected course from App.jsx
+const Cart = ({selectedCourse, creditHour, remainingHours, coursePrice}) => {   // step-8) here it has received the selected course from App.jsx
     // console.log(selectedCourse, 'hiii')
     return (
         <div className="md:w-1/4 bg-white shadow-md p-6 rounded-xl">
-            <h3 className="text-lg font-bold text-blue-600">Credit Hour Remaining 7 hr</h3>
+            <h3 className="text-lg font-bold text-blue-600">Credit Hour Remaining {remainingHours} hr</h3>
             <hr className="my-4"/>
             <h3 className="font-bold text-xl">Course Name</h3>
             <ol className="mt-3 text-gray-700 list-decimal ml-5">

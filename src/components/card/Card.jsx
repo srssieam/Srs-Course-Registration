@@ -4,7 +4,7 @@ const Card = ({course}) => {
     console.log(course, 'from card component');
     const {id, img, course_name, course_details, price, credit} = course;
     return (
-        <div className="p-4 bg-white shadow-md flex flex-col justify-between gap-2">
+        <div className="p-4 bg-white shadow-md flex flex-col justify-between gap-2 rounded-xl">
              <img src={img} alt="img" className='w-full'/>
              <h3 className="font-bold text-lg">{course_name}</h3>
              <p className="text-sm text-gray-700">{course_details}</p>

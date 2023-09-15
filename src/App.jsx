@@ -3,6 +3,8 @@ import { useState } from 'react'
 import './App.css'
 import Cart from './components/Cart/Cart'
 import Cards from './components/cards/cards'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [selectedCourse, setSelectedCourse]=useState([])
@@ -14,7 +16,9 @@ function App() {
 
     const isAlreadySelected = selectedCourse.find( selected => selected === course )
     if(isAlreadySelected){
-      alert("You have already selected this cours");
+      toast.warn("You have already selected this course",{
+        position: "top-center"
+    });
       return;
     }
     const newSelectedCourse = [...selectedCourse, course]
@@ -22,7 +26,9 @@ function App() {
 
     const totalHour = creditHours + creditHour
     if(20 < totalHour){
-      alert("You don't have enough time");
+      toast.warn("You don't have enough remaining hours",{
+        position: "top-center"
+      });
       return;
     }
     setCreditHours(totalHour);
@@ -39,6 +45,7 @@ function App() {
     <>
       <header>
         <h1 className='text-4xl font-bold text-center mt-7 px-4'>Course Registration</h1>
+        <ToastContainer />
       </header>
       <main className='md:flex justify-between gap-6 my-10 mx-4'>
         <Cards handleSelectBtn={handleSelectBtn}></Cards>    {/* step-1) here we have passed the function as props to Cards.jsx component */}

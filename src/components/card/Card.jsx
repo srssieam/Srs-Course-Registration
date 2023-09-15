@@ -1,5 +1,6 @@
 
-const Card = () => {
+const Card = ({course}) => {
+    console.log(course, 'from card component');
     return (
         <div className="p-5 bg-white shadow-md">
              <img src='' alt="img" />

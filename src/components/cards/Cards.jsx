@@ -13,12 +13,16 @@ const Cards = () => {
         }
         fetchedData()
     },[])
-        console.log(courseInfo, 'fetched data');
+        // console.log(courseInfo, 'fetched data');
     return (
         <div className="md:w-3/4 grid grid-cols-3 gap-6">
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            {
+                courseInfo.map( course => {
+                    return(
+                        <Card key={course.id} course={course}></Card>
+                    )
+                })
+            }
         </div>
     );
 };

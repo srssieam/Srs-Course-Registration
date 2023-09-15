@@ -10,11 +10,18 @@ function App() {
   const [coursePrice, setCoursePrice]=useState(0)
 
   const handleSelectBtn= (course, creditHour, price )=>{  // step-6) here it has received the data from Card.jsx 
+    const isAlreadySelected = selectedCourse.find( selected => selected === course )
+    if(isAlreadySelected){
+      alert("You have already selected this cours");
+      return;
+    }
     const newSelectedCourse = [...selectedCourse, course]
     setCreditHours(creditHours + creditHour);
     setSelectedCourse(newSelectedCourse);
     setCoursePrice(coursePrice + price);
   }
+
+
     console.log("selected course is ",selectedCourse);
     console.log('total hours :', creditHours)
     console.log('total price :', coursePrice)
